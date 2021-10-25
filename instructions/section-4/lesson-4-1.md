@@ -1,5 +1,4 @@
 [< Back to Overview](../../README.md)
-
 # Lesson 4.1: HTML Basics
 
 This assignment will teach you the following:
