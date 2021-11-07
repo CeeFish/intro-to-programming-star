@@ -13,7 +13,7 @@ const skillsList = skillsSection.querySelector('ul');
 // Using forEach arrow function instead of a for loop to get the array of skills
 // skills.forEach((s) => {
 //   const skill = document.createElement('li');
-//   console.log(s);
+//   console.log(s);q
 //   skill.innerText = s;
 //   skillsList.appendChild(skill);
 // });
@@ -25,7 +25,7 @@ for(let i = 0; i < skills.length; i++) {
 };
 
 const messageForm = document.getElementsByName("leave_message")[0];
-console.log(messageForm)
+// console.log(messageForm)
 messageForm.addEventListener('submit', (e) => {
         e.preventDefault();
     const name = e.target.name.value;
