@@ -4,29 +4,34 @@
         <title>Candace Fisher's Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Indie+Flower&family=Noto+Sans+JP:wght@100&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     </head>
 <body>
     <div>
         <header>
             <h1>Candace Fisher</h1>
+            <p>Aspiring Web Developer</p>
         </header>
     </div>
 <main> 
-    <section>
+    <section id="about">
         <h1>About Me</h1>
             <p>I come from what you would call a non-tech background.
-    I have a bachelors degree in International Business and my MBA from Oral Roberts Univeristy.
+    I have a bachelors degree in International Business and my MBA from Oral Roberts University.
     I have always had a fascination with computers and technology, so when life gave me lemons I decided to make lemonade. 
     Thus beginning my career change and decision to take a leap of faith to learn more about web and app development.</p>
     </section>
 
-    <section>
+    <section id="experience">
         <h1>Experience</h1>
             <p>My previous business career has given me the opportunity to be collaborative, creative, empathetic, and an active
     listener. Qualities and traits that I believe will translate well to become a great Junior Web Developer by being great at
     projects and building great relationships along my career.
     I am currently learning JavaScript with Code the Dream with the desire to start my new career in web development.
-    My goal is to become a back end developer and learn Ruby after my current JavaScript bootcamp.
+    My goal is to become a back end developer and learn Ruby after my current JavaScript boot camp.
             </p>
     </section>
 
@@ -37,7 +42,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="connect">
         <h1>Lets Connect</h1>
             <a href="https://www.linkedin.com/in/candace-fisher-mba-29801429" target="_blank">LinkedIn</a><br>
             <a href="https://github.com/CeeFish" target="_blank">GitHub</a><br>
@@ -45,7 +50,7 @@
     </section>
 </main>
 
-    <section>
+    <section id="comment">
         <h2>Leave a Message</h2>
             <form name="leave_message" id="message_form">
                 <label for="name">Name:</label><br>
@@ -57,7 +62,7 @@
                 <label for="message">Message:</label><br>
                 <textarea name="message" required="true"></textarea>
                  
-                <button type="submit" >Submit</button>
+                <button type="submit" class="btn">Submit</button>
             </form>
     </section>
 
