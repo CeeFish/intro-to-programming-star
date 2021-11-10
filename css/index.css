@@ -1,0 +1,82 @@
+html,
+body {
+    margin: 5;
+    padding: 0;
+    background-color: silver;
+    color: black;
+    font-family: indie flower;
+    font-weight: 700;
+}
+header {
+    color: purple;
+    font-size: 20px;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+header p {
+    background-color: black;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
+    width: 20%;
+    text-align: center;
+}
+#about h1 {
+    color: blue;
+    font-size: 30px;
+}
+#experience h1 {
+    color: blue;
+    font-size: 30px;
+}
+#skills h2 {
+    color: blue;
+    font-size: 30px;
+}
+#connect h1 {
+    color: blue;
+    font-size: 30px;
+}
+#comment h2 {
+    color: blue;
+    font-size: 30px;
+}
+ul li {
+    border-style: inset;
+    box-shadow: 2px 2px 2px purple;
+    border-radius: 5px;
+    list-style: none;
+    min-width: 25px;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 15px 15px 15px 15px;
+}
+a:link {
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+}
+textarea {
+    width: 300px;
+    height: 100px;
+}
+.btn {
+    color: black;
+    background-color: snow;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 80px;
+    padding: 5px;
+    margin: 0 3px;
+    outline: none;
+    box-shadow: 2px 2px 2px purple;
+}
+footer p{
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 0;
+    background-color: purple;
+    text-align: center;
+}
