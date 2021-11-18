@@ -2,7 +2,7 @@ const today = new Date();
 const thisYear = today.getFullYear();
 footer = document.querySelector('footer');
 copyright = document.createElement('p');
-copyright.innerHTML = `&#169; <span>Candace Fisher</span> ${thisYear}`;
+copyright.innerHTML = `&#169; ${thisYear} <span>Candace Fisher</span>`;
 
 footer.appendChild(copyright);
 
@@ -48,17 +48,17 @@ messageForm.addEventListener('submit', (e) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
-    //Trying to create an edit button
-    const editButton = document.createElement("button");
-    editButton.innerText = "edit";
-    editButton.setAttribute("type", "button");
+    // Created an edit button
+// const editButton = document.createElement("button");
+    // editButton.innerText = "edit";
+    // editButton.setAttribute("type", "button");
 
-    editButton.addEventListener('click', (e) => {
-        const listItem = e.target.parentNode;
-        const message = listItem.querySelector("span");
-        message.contentEditable = true;
-    });
-    newMessage.appendChild(editButton);
+    // editButton.addEventListener('click', (e) => {
+    //     const listItem = e.target.parentNode;
+    //     const message = listItem.querySelector("span");
+    //     message.contentEditable = true;
+    // });
+    // newMessage.appendChild(editButton);
     
     document.getElementById('message_form').reset();
 });
