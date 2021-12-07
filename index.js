@@ -51,18 +51,22 @@ messageForm.addEventListener('submit', (e) => {
 hideAllMessages();
 
     // Created an edit button
-const editButton = document.createElement("button");
-    editButton.innerText = "edit";
-    editButton.setAttribute("type", "button");
+// const editButton = document.createElement("button");
+//     editButton.innerText = "edit";
+//     editButton.setAttribute("type", "button");
 
-    editButton.addEventListener('click', (e) => {
-        const listItem = e.target.parentNode;
-        const message = listItem.querySelector("span");
-        message.contentEditable = true;
-    });
-    newMessage.appendChild(editButton);
+//     editButton.addEventListener('click', (e) => {
+//         const listItem = e.target.parentNode;
+//         const message = listItem.querySelector("span");
+//         message.contentEditable = true;
+//     });
+//     newMessage.appendChild(editButton);
     
 // Put the done button inside the edit button add event listener
 
     document.getElementById('message_form').reset();
 });
+
+const githubRequest = new XMLHttpRequest();
+githubRequest.open('GET', 'https://api.github.com/users/CeeFish/repos');
+githubRequest.send();
