@@ -45,28 +45,41 @@ messageForm.addEventListener('submit', (e) => {
         const entry = e.target.parentNode;
         entry.remove();
     });
-    newMessage.appendChild(removeButton);
-    messageList.appendChild(newMessage);
-
-hideAllMessages();
-
-    // Created an edit button
-// const editButton = document.createElement("button");
-//     editButton.innerText = "edit";
-//     editButton.setAttribute("type", "button");
-
-//     editButton.addEventListener('click', (e) => {
-//         const listItem = e.target.parentNode;
-//         const message = listItem.querySelector("span");
-//         message.contentEditable = true;
-//     });
-//     newMessage.appendChild(editButton);
+    // Create an edit button and put the done button inside the edit button event listener
+    const editButton = document.createElement("button");
+        editButton.innerText = "edit";
+        editButton.setAttribute("type", "button");
     
-// Put the done button inside the edit button add event listener
-
-    document.getElementById('message_form').reset();
+        editButton.addEventListener('click', (e) => {
+            const listItem = e.target.parentNode;
+            const message = listItem.querySelector("span");
+            message.contentEditable = true;
+        });
+        newMessage.appendChild(editButton);
+        newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+    
+    messageForm.reset();
 });
+
+// hideAllMessages();
 
 const githubRequest = new XMLHttpRequest();
 githubRequest.open('GET', 'https://api.github.com/users/CeeFish/repos');
 githubRequest.send();
+
+githubRequest.addEventListener('load', myEventListener);
+    function myEventListener() {
+    const repositories = JSON.parse(this.response);
+    // console.log(repositories);
+
+const projectSection = document.getElementById('projects');
+const projectList = projectSection.querySelector('ul');
+    
+for(let i = 0; i < repositories.length; i++) {
+    const project = document.createElement('li');
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+    console.log(repositories[i].name);
+    };
+};

@@ -10,26 +10,26 @@ html {
     height: fit-content;
 }
 body {
-    background-color: #14213D;
-    color: #FCA311;
     font-family: indie flower, cursive;
     font-weight: 700;
     /* display: grid;
     grid-template-rows: auto 1fr auto; */
+    background-color: #14213D; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #FCA311, #14213D );
 }
 header {
     color: #FCA311;
     font-size: 20px;
     top: 0;
-	left: 0; 
+	left: 0;
+    padding: 0 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: baseline;
     position: fixed;
 	width: 100%;
-	background-color: #E5E5E5;
-    /* opacity: 65%; */
+	background-color: #14213D;
 }
 #connect {
     margin-left: auto;
@@ -56,7 +56,8 @@ header {
     color:#FCA311;   
 }
 #skills h2, 
-#comment h2 {
+#comment h2,
+#projects h2 {
     font-size: 30px;
     color: #E5E5E5;
 }
@@ -72,11 +73,11 @@ ul li {
     flex-wrap: wrap;
     text-align: center;
 }
-a:link {
+/* a:link {
     /* color: #3d0e61; */
     font-weight: bold;
     text-decoration: none;
-}
+} */
 textarea {
     width: 300px;
     height: 100px;
