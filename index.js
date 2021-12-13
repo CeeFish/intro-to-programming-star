@@ -62,6 +62,8 @@ messageForm.addEventListener('submit', (e) => {
     messageForm.reset();
 });
 
+// hideAllMessages();
+
 const githubRequest = new XMLHttpRequest();
 githubRequest.open('GET', 'https://api.github.com/users/CeeFish/repos');
 githubRequest.send();

@@ -10,21 +10,35 @@ html {
     height: fit-content;
 }
 body {
+<<<<<<< HEAD
     background-color: rgb(248, 238, 226);
     font-weight: 700;
+=======
+    font-family: indie flower, cursive;
+    font-weight: 700;
+    /* display: grid;
+    grid-template-rows: auto 1fr auto; */
+    background-color: #14213D; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #FCA311, #14213D );
+>>>>>>> 5bd74bf9132bc249c4cc44ab2d4ce9cd6906a07d
 }
 header {
     color: #6847ff;
     font-size: 20px;
     top: 0;
-	left: 0; 
+	left: 0;
+    padding: 0 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: baseline;
     position: fixed;
 	width: 100%;
+<<<<<<< HEAD
 	background-color: #080101e9;
+=======
+	background-color: #14213D;
+>>>>>>> 5bd74bf9132bc249c4cc44ab2d4ce9cd6906a07d
 }
 #connect {
     color: #2304af;
@@ -64,11 +78,11 @@ ul li {
     flex-wrap: wrap;
     text-align: center;
 }
-a:link {
+/* a:link {
     /* color: #3d0e61; */
     font-weight: bold;
     text-decoration: none;
-}
+} */
 textarea {
     width: 300px;
     height: 100px;
