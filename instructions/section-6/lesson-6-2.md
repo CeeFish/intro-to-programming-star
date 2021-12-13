@@ -1,4 +1,4 @@
-[< Back to Overview](../../README.md)
+0[< Back to Overview](../../README.md)
 
 # Lesson 6.2: Working with Fetch API
 
