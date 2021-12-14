@@ -10,15 +10,14 @@ html {
     height: fit-content;
 }
 body {
-    font-family: indie flower, cursive;
+    background-color: rgb(211, 210, 210);
     font-weight: 700;
+
     /* display: grid;
     grid-template-rows: auto 1fr auto; */
-    background-color: #14213D; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, #FCA311, #14213D );
 }
 header {
-    color: #FCA311;
+    color: #6847ff;
     font-size: 20px;
     top: 0;
 	left: 0;
@@ -29,37 +28,32 @@ header {
     align-items: baseline;
     position: fixed;
 	width: 100%;
-	background-color: #14213D;
 }
 #connect {
-    margin-left: auto;
-    padding: 32px;
+    color: #6847ff;
+    margin-left: baseline;
+    display: flex;
+    flex-direction: space;
+    padding: 30px;
 }
 .container {
     margin: 10% 10%;
 }
-/* #about {
-    display: flex;
-    flex-wrap: wrap;  
-} */
 #about h1, 
 #experience h1, 
 #connect h1 {
-    color: #E5E5E5;
+    color: #240c5a;
     font-size: 30px;
 }
-/* #connect div{ */
-    /* display: inline-flex;
-} */
 .social-media {
     font-size: 30px;
-    color:#FCA311;   
+    color: #2304af;
 }
 #skills h2, 
 #comment h2,
 #projects h2 {
     font-size: 30px;
-    color: #E5E5E5;
+    color: #240c5a;
 }
 ul li {
     border-style: inset;
@@ -97,7 +91,8 @@ textarea {
 footer p{    
     /* position: absolute; */
     width: 100%;
-    background-color: #E5E5E5;
+    color: #2304af;
+    background-color: #080101;
     text-align: center;
     top: 0;
     left: 0;

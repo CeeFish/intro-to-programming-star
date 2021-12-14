@@ -62,24 +62,33 @@ messageForm.addEventListener('submit', (e) => {
     messageForm.reset();
 });
 
-// hideAllMessages();
+// const githubRequest = new XMLHttpRequest();
+// githubRequest.open('GET', 'https://api.github.com/users/CeeFish/repos');
+// githubRequest.send();
 
-const githubRequest = new XMLHttpRequest();
-githubRequest.open('GET', 'https://api.github.com/users/CeeFish/repos');
-githubRequest.send();
-
-githubRequest.addEventListener('load', myEventListener);
-    function myEventListener() {
-    const repositories = JSON.parse(this.response);
-    // console.log(repositories);
+// githubRequest.addEventListener('load', myEventListener);
+//     function myEventListener() {
+//     const repositories = JSON.parse(this.response);
+//     // console.log(repositories);
 
 const projectSection = document.getElementById('projects');
 const projectList = projectSection.querySelector('ul');
     
-for(let i = 0; i < repositories.length; i++) {
-    const project = document.createElement('li');
-    project.innerText = repositories[i].name;
-    projectList.appendChild(project);
-    console.log(repositories[i].name);
+// for(let i = 0; i < repositories.length; i++) {
+//     const project = document.createElement('li');
+//     project.innerText = repositories[i].name;
+//     projectList.appendChild(project);
+//     console.log(repositories[i].name);
+//     };
+// };
+
+fetch('https://api.github.com/users/CeeFish/repos')
+    .then(response => response.json())
+    .then( repos => {
+        for(let i = 0; i < repos.length; i++) {
+            const project = document.createElement('li');
+            project.innerText = repos[i].name;
+            projectList.appendChild(project);
+            console.log(repos[i].name);
     };
-};
+});
