@@ -10,17 +10,8 @@ html {
     height: fit-content;
 }
 body {
-<<<<<<< HEAD
-    background-color: rgb(248, 238, 226);
+    background-color: rgb(211, 210, 210);
     font-weight: 700;
-=======
-    font-family: indie flower, cursive;
-    font-weight: 700;
-    /* display: grid;
-    grid-template-rows: auto 1fr auto; */
-    background-color: #14213D; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, #FCA311, #14213D );
->>>>>>> 5bd74bf9132bc249c4cc44ab2d4ce9cd6906a07d
 }
 header {
     color: #6847ff;
@@ -34,14 +25,10 @@ header {
     align-items: baseline;
     position: fixed;
 	width: 100%;
-<<<<<<< HEAD
 	background-color: #080101e9;
-=======
-	background-color: #14213D;
->>>>>>> 5bd74bf9132bc249c4cc44ab2d4ce9cd6906a07d
 }
 #connect {
-    color: #2304af;
+    color: #6847ff;
     margin-left: baseline;
     display: flex;
     flex-direction: space;
