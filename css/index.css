@@ -12,6 +12,9 @@ html {
 body {
     background-color: rgb(211, 210, 210);
     font-weight: 700;
+
+    /* display: grid;
+    grid-template-rows: auto 1fr auto; */
 }
 header {
     color: #6847ff;
@@ -25,7 +28,6 @@ header {
     align-items: baseline;
     position: fixed;
 	width: 100%;
-	background-color: #080101e9;
 }
 #connect {
     color: #6847ff;
