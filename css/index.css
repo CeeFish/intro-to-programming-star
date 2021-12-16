@@ -24,6 +24,7 @@ header {
     padding: 10px 10px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
     position: fixed;
@@ -32,6 +33,10 @@ header {
 }
 .navbar {
     color: #6847ff;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    list-style: none;
 }
 .navbar a:hover {
     color: yellow;
@@ -52,6 +57,7 @@ header {
 #connect h1 {
     color: #6847ff;
     font-size: 30px;
+    padding: auto;
 }
 .social-media {
     font-size: 30px;
@@ -77,10 +83,10 @@ ul li {
     text-align: center;
 }
 #comment {
-    height: 10em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
 }
 textarea {
     width: 300px;
@@ -109,6 +115,7 @@ footer p{
     background-color: #080101;
     text-align: center;
 }
+
 
 /* Media Queries */
 @media print {
