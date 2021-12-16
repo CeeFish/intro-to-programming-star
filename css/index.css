@@ -6,18 +6,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Indie+Flower&family=Montserrat&family=Noto+Sans+JP:wght@100&family=Playfair+Display:wght@500&display=swap');
 
 html {
-	font-size: 20px;
+	font-size: 16px;
     height: fit-content;
 }
 body {
     background-color: rgb(243, 238, 238);
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
-    background-image: url("https://meshdesignstudio.com/wp-content/uploads/2018/02/mesh-background-portfolio-lglines.jpg");
+    /* background-image: url("https://meshdesignstudio.com/wp-content/uploads/2018/02/mesh-background-portfolio-lglines.jpg"); */
 }
 header {
     color: #6847ff;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     top: 0;
 	left: 0;
@@ -25,32 +25,27 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: baseline;
     position: fixed;
 	width: 100%;
 	background-color: #080101e9;
 }
-.sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+section {
+    padding-top: 80px;
 }
 .navbar {
+    color:#6847ff;
     list-style: none;
 	margin-left: -0.5em;
 	margin-right: -0.5em;
 	padding: 0;
 }
-.navbar li {
+.navbar li,
+.navbar a {
+    color: #6847ff;
 	display: inline-block;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
-}
-
-.navbar li:before {
-	content: "\200B"; /* 1 */
-	position: absolute; /* 2 */
 }
 .navbar a:hover {
     color: yellow;
@@ -68,7 +63,8 @@ header {
 }
 #about h1, 
 #experience h1, 
-#connect h1 {
+#connect h1,
+#messages h2 {
     color: #6847ff;
     font-size: 30px;
     padding: auto;
@@ -89,6 +85,7 @@ ul li {
     border-style: groove;
     border-radius: 15px;
     list-style: none;
+    height: 50px;
     width: 150px;
     display: inline-block;
     margin: 10px 10px;
