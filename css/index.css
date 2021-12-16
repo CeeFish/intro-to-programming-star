@@ -31,12 +31,26 @@ header {
 	width: 100%;
 	background-color: #080101e9;
 }
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
 .navbar {
-    color: #6847ff;
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; */
     list-style: none;
+	margin-left: -0.5em;
+	margin-right: -0.5em;
+	padding: 0;
+}
+.navbar li {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.navbar li:before {
+	content: "\200B"; /* 1 */
+	position: absolute; /* 2 */
 }
 .navbar a:hover {
     color: yellow;
