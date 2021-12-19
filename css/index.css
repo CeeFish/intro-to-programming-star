@@ -32,18 +32,18 @@ header {
 	background-color: #080101e9;
 }
 .social-media {
-    font-size: 30px;
+    font-size: 20px;
     color: #6847ff;
 }
-/* section {
+section {
     padding-top: 80px;
-} */
+}
 .navbar {
     color:#6847ff;
     list-style: none;
 	margin-left: -0.5em;
 	margin-right: -0.5em;
-	padding: 0;
+	padding-top: 15px;
 }
 .navbar li,
 .navbar a {
@@ -119,7 +119,7 @@ textarea {
   color: yellow;
 }
 footer p, 
-.navbar {    
+.navbar {  
     top: 0;
     left: 0;
     margin: 0;
@@ -133,9 +133,11 @@ footer .navbar {
     top: 0;
     left: 0;
     margin: 0;
+    bottom: 0;
     align-items: center;
     text-align: right;
 }
+
 
 /* Media Queries */
 @media print {
