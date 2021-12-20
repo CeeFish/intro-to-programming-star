@@ -36,7 +36,7 @@ messageForm.addEventListener('submit', (e) => {
     const messageList = messageSection.querySelector("ul");
     const newMessage = document.createElement("li");
     newMessage.innerHTML = `<a href="mailto:${email}">${name}</a> <span>${textarea}</span>`;
-
+    
     const removeButton = document.createElement("button");
     removeButton.innerText = "remove";
     removeButton.setAttribute("type", "button");
@@ -45,6 +45,7 @@ messageForm.addEventListener('submit', (e) => {
         const entry = e.target.parentNode;
         entry.remove();
     });
+
     // Create an edit button and put the done button inside the edit button event listener
     const editButton = document.createElement("button");
         editButton.innerText = "edit";
@@ -61,6 +62,7 @@ messageForm.addEventListener('submit', (e) => {
     
     messageForm.reset();
 });
+
 
 // const githubRequest = new XMLHttpRequest();
 // githubRequest.open('GET', 'https://api.github.com/users/CeeFish/repos');

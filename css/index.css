@@ -13,13 +13,13 @@ body {
     background-color: rgb(243, 238, 238);
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
-    padding-top: 60px;
-    padding-bottom: 40px;
 }
 header {
+	background-color: #080101e9;
     color: #6847ff;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+    position: fixed;
     top: 0;
 	left: 0;
     padding: 10px 10px;
@@ -27,34 +27,23 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: baseline;
-    position: fixed;
 	width: 100%;
-	background-color: #080101e9;
 }
 .social-media {
     font-size: 24px;
     color: #6847ff;
 }
-section {
-    padding-top: 82px;
-}
-.navbar {
-    color:#6847ff;
-    list-style: none;
-	margin-left: -0.5em;
-	margin-right: -0.5em;
-	padding-top: 15px;
-}
-.navbar li,
-.navbar a {
+#connect {
     color: #6847ff;
-	display: inline-block;
-	margin-left: 0.5em;
-	margin-right: 0.5em;
+    margin-left: auto;
+    padding: 10px 10px;
 }
-.navbar a:hover {
-    color: yellow;
+#connect a:hover {
+  color: yellow;
 }
+/* section {
+    padding-top: 82px;
+} */
 .container {
     margin: 10% 10%;
 }
@@ -111,32 +100,30 @@ textarea {
 .btn:hover {
   background-color: yellow;
 }
-#connect {
+.navbar {
+    color:#6847ff;
+    list-style: none;
+    text-align: right;
+    align-items: center;
+    position: absolute;
+}
+.navbar li,
+.navbar a {
     color: #6847ff;
-    margin-left: auto;
-    padding: 10px 10px;
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
-#connect a:hover {
-  color: yellow;
+.navbar a:hover {
+    color: yellow;
 }
-footer p, 
-.navbar {  
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
+footer {  
     color: #6847ff;
     background-color: #080101;
+    width: 100%;
     align-items: center;
     text-align: left;
-}
-footer .navbar {
-    top: 0;
-    left: 0;
-    margin: 0;
-    bottom: 0;
-    align-items: center;
-    text-align: right;
+    position: absolute;
 }
 
 
