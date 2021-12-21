@@ -29,21 +29,22 @@ header {
     align-items: baseline;
 	width: 100%;
 }
-.social-media {
-    font-size: 24px;
+.navbar {
+    color:#6847ff;
+    list-style: none;
+    align-items: center;
+    text-align: right;
+}
+.navbar li,
+.navbar a {
     color: #6847ff;
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
-#connect {
-    color: #6847ff;
-    margin-left: auto;
-    padding: 10px 10px;
+.navbar a:hover {
+    color: yellow;
 }
-#connect a:hover {
-  color: yellow;
-}
-/* section {
-    padding-top: 82px;
-} */
 .container {
     margin: 10% 10%;
 }
@@ -100,30 +101,32 @@ textarea {
 .btn:hover {
   background-color: yellow;
 }
-.navbar {
-    color:#6847ff;
-    list-style: none;
-    text-align: right;
-    align-items: center;
-    position: absolute;
-}
-.navbar li,
-.navbar a {
-    color: #6847ff;
-    display: inline-block;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-.navbar a:hover {
-    color: yellow;
-}
 footer {  
     color: #6847ff;
     background-color: #080101;
     width: 100%;
+    left: 0;
+    right: 0;
+    padding: 10px;
     align-items: center;
     text-align: left;
     position: absolute;
+}
+.social-media {
+    font-size: 24px;
+    color: #6847ff;
+    text-align: right;
+    align-items: center;
+}
+#connect {
+    color: #6847ff;
+    margin-left: auto;
+    padding: 10px 10px;
+    text-align: right;
+    align-items: center;
+}
+#connect a:hover {
+  color: yellow;
 }
 
 
