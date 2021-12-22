@@ -4,7 +4,7 @@ footer = document.querySelector('footer');
 copyright = document.createElement('p');
 copyright.innerHTML = `&#169; ${thisYear} <span>Candace Fisher</span>`;
 
-footer.appendChild(copyright);
+footer.prepend(copyright);
 
 const skills = ['Excel', 'SQL', 'Power BI', 'JavaScript', 'Git', 'HTML', 'CSS'];
 const skillsSection = document.getElementById('skills');
@@ -35,19 +35,22 @@ messageForm.addEventListener('submit', (e) => {
     const messageSection = document.querySelector("#messages");
     const messageList = messageSection.querySelector("ul");
     const newMessage = document.createElement("li");
-    newMessage.innerHTML = `<a href="mailto:${email}">${name}</a> <span>${textarea}</span>`;
-
+    newMessage.innerHTML = `<a class="inner-message" href="mailto:${email}">${name}</a> <span class="inner-message">${textarea}</span>`;
+    
     const removeButton = document.createElement("button");
     removeButton.innerText = "remove";
+    removeButton.className = "remove-btn"
     removeButton.setAttribute("type", "button");
 
     removeButton.addEventListener('click', (e) => {
         const entry = e.target.parentNode;
         entry.remove();
     });
+
     // Create an edit button and put the done button inside the edit button event listener
     const editButton = document.createElement("button");
         editButton.innerText = "edit";
+        editButton.className = "edit-btn"
         editButton.setAttribute("type", "button");
     
         editButton.addEventListener('click', (e) => {
@@ -58,9 +61,11 @@ messageForm.addEventListener('submit', (e) => {
         newMessage.appendChild(editButton);
         newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
+
     
     messageForm.reset();
 });
+
 
 // const githubRequest = new XMLHttpRequest();
 // githubRequest.open('GET', 'https://api.github.com/users/CeeFish/repos');
