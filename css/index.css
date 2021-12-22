@@ -22,7 +22,7 @@ header {
     position: fixed;
     top: 0;
 	left: 0;
-    padding: 10px 10px;
+    padding: .625rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -55,7 +55,7 @@ a:focus {
     color: yellow;
 }
 section {
-    padding: 10px;
+    padding: .625rem;
 	scroll-margin-top: 8em;
 }
 .container {
@@ -159,9 +159,8 @@ footer {
 }
 
 
-/* Media Queries */
-/* @media print {
+@media print {
     section {
 		min-height: auto;
 	}
-} */
+}
