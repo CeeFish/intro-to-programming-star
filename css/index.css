@@ -27,7 +27,7 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: baseline;
-	width: 100%;
+	  width: 100%;
     justify-content: space-between;
 }
 @media (max-width: 780px) { 
