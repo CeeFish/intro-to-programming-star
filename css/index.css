@@ -28,12 +28,20 @@ header {
     flex-direction: row;
     align-items: baseline;
 	width: 100%;
+    justify-content: space-between;
+}
+@media (max-width: 780px) { 
+    body {
+        margin: 0;
+    }
+    header {
+        position: unset;
+    }
 }
 .navbar {
     color:#6847ff;
     list-style: none;
     align-items: center;
-    text-align: right;
 }
 .navbar li,
 .navbar a {
@@ -42,11 +50,17 @@ header {
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
-.navbar a:hover {
+.navbar a:hover,
+a:focus {
     color: yellow;
+}
+section {
+    padding: 10px;
+	scroll-margin-top: 8em;
 }
 .container {
     margin: 10% 10%;
+    /* background-color: #080101; */
 }
 #about h1, 
 #experience h1, 
@@ -68,13 +82,15 @@ ul li {
     border-style: groove;
     border-radius: 15px;
     list-style: none;
-    height: 90px;
-    width: 150px;
+    min-height: 90px;
+    min-width: 150px;
     display: inline-table;
     flex-wrap: wrap;
     margin: 10px 10px;
     text-align: center;
-    padding-top: 28px;
+    padding-top: 2.5%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 #comment {
     display: block;
@@ -86,7 +102,15 @@ textarea {
     width: 300px;
     height: 100px;
 }
-.btn {
+@media (max-width: 780px) { 
+    textarea {
+        max-width: 200px;
+        min-height: 100px;
+    }
+}
+.btn,
+.remove-btn,
+.edit-btn {
     color: black;
     background-color: snow;
     font-weight: bold;
@@ -97,9 +121,14 @@ textarea {
     margin: 0 3px;
     outline: none;
     box-shadow: 7px 7px 7px #6847ff;
+    cursor: pointer;
 }
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: yellow;
+}
+.inner-message {
+    margin: 0 7px;
 }
 footer {  
     color: #6847ff;
@@ -111,17 +140,17 @@ footer {
     align-items: center;
     text-align: left;
     position: absolute;
+    display: flex;
+    justify-content: space-between;
 }
 .social-media {
-    font-size: 24px;
+    font-size: 20px;
     color: #6847ff;
     text-align: right;
     align-items: center;
-}
+    }
 #connect {
     color: #6847ff;
-    margin-left: auto;
-    padding: 10px 10px;
     text-align: right;
     align-items: center;
 }
@@ -131,19 +160,8 @@ footer {
 
 
 /* Media Queries */
-@media print {
+/* @media print {
     section {
 		min-height: auto;
 	}
-}
-
-@media screen and (min-width: 500px) {
-    
-    #about {
-        margin-top: auto;
-    }
-    
-    ul li {
-        width: 200px;
-    }
-}
+} */
