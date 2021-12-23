@@ -48,17 +48,17 @@ messageForm.addEventListener('submit', (e) => {
     });
 
     // Create an edit button and put the done button inside the edit button event listener
-    const editButton = document.createElement("button");
-        editButton.innerText = "edit";
-        editButton.className = "edit-btn"
-        editButton.setAttribute("type", "button");
+    // const editButton = document.createElement("button");
+    //     editButton.innerText = "edit";
+    //     editButton.className = "edit-btn"
+    //     editButton.setAttribute("type", "button");
     
-        editButton.addEventListener('click', (e) => {
-            const listItem = e.target.parentNode;
-            const message = listItem.querySelector("span");
-            message.contentEditable = true;
-        });
-        newMessage.appendChild(editButton);
+    //     editButton.addEventListener('click', (e) => {
+    //         const listItem = e.target.parentNode;
+    //         const message = listItem.querySelector("span");
+    //         message.contentEditable = true;
+    //     });
+    //     newMessage.appendChild(editButton);
         newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
