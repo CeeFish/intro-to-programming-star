@@ -10,7 +10,7 @@ html {
     height: fit-content;
 }
 body {
-    background-color: rgb(243, 238, 238);
+    background-color: rgb(197, 181, 181);
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
@@ -62,9 +62,9 @@ section {
     margin: 10% 10%;
     /* background-color: #080101; */
 }
-#about h1, 
-#experience h1, 
-#connect h1,
+#about h2, 
+#experience h2, 
+#connect h2,
 #messages h2 {
     color: #6847ff;
     font-size: 30px;
@@ -97,14 +97,17 @@ ul li {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-.flex-container > div {
-    max-width: 700px;
-    margin: 10px;
+    text-align: center;
+    margin: 10px 10px;
     text-align: center;
     padding-top: 2.5%;
     padding-left: 3%;
     padding-right: 3%;
+}
+.flex-container > ul {
+    max-width: 700px;
+    margin: 10px 10px;
+    text-align: center;
     line-height: 45%;
     font-size: 16px;
     border-style: groove;
