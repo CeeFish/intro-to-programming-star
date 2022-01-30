@@ -1,3 +1,9 @@
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
 const today = new Date();
 const thisYear = today.getFullYear();
 footer = document.querySelector('footer');
@@ -6,7 +12,7 @@ copyright.innerHTML = `&#169; ${thisYear} <span>Candace Fisher</span>`;
 
 footer.prepend(copyright);
 
-const skills = ['Excel', 'SQL', 'Power BI', 'JavaScript', 'Git', 'HTML', 'CSS'];
+const skills = ['Excel', 'SQL', 'Power BI', 'JavaScript', 'Git', 'HTML', 'CSS', 'AJAX', 'API Fetch'];
 const skillsSection = document.getElementById('skills');
 const skillsList = skillsSection.querySelector('ul');
 
