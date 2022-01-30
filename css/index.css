@@ -127,11 +127,11 @@ header {
     display: inline-block;
     margin-left: 0.5em;
     margin-right: 0.5em;
-}
+} */
 .navbar a:hover,
 a:focus {
     color: yellow;
-} */
+}
 section {
     padding: .625rem;
 	scroll-margin-top: 8em;
